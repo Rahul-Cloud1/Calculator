@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .calculator {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        #result {
+            width: 320px;
+            height: 60px;
+            text-align: right;
+            font-size: 36px;
+            color: #fff;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #000;
+            border: none;
+            box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        button {
+            width: 70px;
+            height: 70px;
+            background-color: #444;
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            margin: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        .operator {
+            background-color: #f39c12;
+        }
+
+        .operator:hover {
+            background-color: #e67e22;
+        }
+
+        .equal {
+            background-color: #27ae60;
+            width: calc(100% - 10px);
+        }
+
+        .equal:hover {
+            background-color: #2ecc71;
+        }
+
+        .clear {
+            background-color: #e74c3c;
+        }
+
+        .clear:hover {
+            background-color: #c0392b;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    <script src="logic.js" defer></script>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="result" value="0" readonly>
+        <div class="row">
+            <button class="clear">AC</button>
+            <button class="operator">/</button>
+            <button class="operator">X</button>
+            <button class="operator">-</button>
+        </div>
+        <div class="row">
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="operator">+</button>
+        </div>
+        <div class="row">
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+        </div>
+        <div class="row">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+        </div>
+        <div class="row">
+            <button>0</button>
+            <button class="equal">=</button>
+        </div>
+    </div>
+</body>
+</html>
