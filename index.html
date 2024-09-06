@@ -16,10 +16,10 @@
         }
 
         .calculator {
-            background-color: #333;
+            background-color: #061921;
             padding: 20px;
             border-radius: 15px;
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 15px rgba(56, 147, 222, 0.2);
         }
 
         #result {
@@ -31,9 +31,9 @@
             margin-bottom: 20px;
             padding: 10px;
             border-radius: 10px;
-            background-color: #000;
+            background-color: #0dd4b3;
             border: none;
-            box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: inset 0px 0px 5px rgba(46, 198, 229, 0.616);
         }
 
         button {
@@ -51,11 +51,11 @@
         }
 
         button:hover {
-            background-color: #555;
+            background-color: #35b1cf;
         }
 
         .operator {
-            background-color: #f39c12;
+            background-color: #12ddf3;
         }
 
         .operator:hover {
@@ -68,7 +68,7 @@
         }
 
         .equal:hover {
-            background-color: #2ecc71;
+            background-color: #16b5ca;
         }
 
         .clear {
@@ -76,7 +76,7 @@
         }
 
         .clear:hover {
-            background-color: #c0392b;
+            background-color: #ae3528;
         }
 
         .row {
@@ -90,29 +90,31 @@
     <div class="calculator">
         <input type="text" id="result" value="0" readonly>
         <div class="row">
-            <button class="clear">AC</button>
-            <button class="operator">/</button>
-            <button class="operator">X</button>
+            <button class="equal">AC</button>
+            
+            
             <button class="operator">-</button>
         </div>
         <div class="row">
-            <button>7</button>
-            <button>8</button>
             <button>9</button>
+            <button>8</button>
+            <button>7</button>
             <button class="operator">+</button>
         </div>
         <div class="row">
-            <button>4</button>
-            <button>5</button>
             <button>6</button>
+            <button>5</button>
+            <button>4</button>
+            <button class="operator">X</button>
         </div>
         <div class="row">
-            <button>1</button>
-            <button>2</button>
             <button>3</button>
+            <button>2</button>
+            <button>1</button>
+            <button class="operator">/</button>
         </div>
         <div class="row">
-            <button>0</button>
+            
             <button class="equal">=</button>
         </div>
     </div>
